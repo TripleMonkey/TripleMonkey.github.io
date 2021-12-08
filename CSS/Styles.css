@@ -3,7 +3,6 @@ body {
     background-size: auto auto;
     background-clip: padding-box;
     background-repeat: no-repeat;
-    
     background-attachment: fixed;
     font-family: adamina;
     font-style: normal;
@@ -43,6 +42,7 @@ body nav a {
 footer {
     font-size: x-small;
     text-align: center;
+    color: #FFFFFF; 
     bottom: 0px;
     clear: left;
     width: 100%;
