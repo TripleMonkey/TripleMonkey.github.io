@@ -6,7 +6,7 @@ class Header extends HTMLElement {
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
 	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li> 
+	      <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li> 
           <li class="nav-item"> <a class="nav-link" href="portfolio.html">Portfolio</a> </li>
 	      <li class="nav-item"> <a class="nav-link" href="about.html">About</a> </li>
 		  <li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
@@ -19,10 +19,8 @@ class Header extends HTMLElement {
     }
 }
 customElements.define('header-component', Header);
-$(document).ready(updateActivePage());
+$(document).ready(setActiveNavItem());
 
-// Function to set active menu selection
-function updateActivePage() {
-    $('li.active').removeClass('active');
+function setActiveNavItem() {
     $(`a[href="${location.pathname.slice(1)}"]`).closest('li.nav-item').addClass('active');
  };
