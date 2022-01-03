@@ -86,18 +86,17 @@ p {
     text-align: justified;
 }
 div.rightSection {
-    border-radius: 10px;
+    background-color: #FFFFFF;
+    position: relative;
     margin-left: 3%;
     margin-right: 3%;
-    padding-top: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-    padding-left: 2%;
     float: right;
     width: 50%;
+    z-index: 3;
 }
 div.rightSection img {
-    box-shadow: 3px 4px 20px 5px grey;
+    position: relative;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 aside {
     float: left;
@@ -108,24 +107,29 @@ aside {
     list-style-type: none;
 }
 div.nameTag {
+    position: relative;
     float: left;
     width: 350px;
     margin: 10px;
     margin-left: 40PX;
+    background-color: #FFFFFF;
     border-color: red;
     border-style: solid;
     border-radius: 10px;
     border-width: 5px 5px 40px 5px;
     height: 180px; 
     text-align: center;
-    box-shadow: 1px 2px 5px grey;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
     transform: rotate(339deg);
+    z-index: 1;
 }
 div.nameTag h3{
     background-color: red;
     color: white;
     font-size: 35px;
-    
+}
+.navbar {
+    opacity: 0.96;
 }
 .navbar.navbar-expand-lg.navbar-light.bg-light .navbar-brand {
     color: #A76DCB;
@@ -142,7 +146,6 @@ div.rightSection {
     border-radius: 10px;
     margin-left: 4.5%;
     margin-right: 2.5%;
-    padding-top: 2.5%;
     padding-right: 2.5%;
     padding-bottom: 2.5%;
     padding-left: 2.5%;
