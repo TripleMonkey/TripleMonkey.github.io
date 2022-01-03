@@ -15,17 +15,14 @@ class Header extends HTMLElement {
 </nav>
 <header> <img src="Images/TripleMonkeyNewColors.svg" alt="Triple Monkey Studio logo"/></header>
     `;
-       $(document).ready(updateActivePage());
+       
     }
 }
 customElements.define('header-component', Header);
+$(document).ready(updateActivePage());
 
 // Function to set active menu selection
 function updateActivePage() {
     $('li.active').removeClass('active');
-    //let page = location.pathname.slice(1);
     $(`a[href="${location.pathname.slice(1)}"]`).closest('li.nav-item').addClass('active');
  };
-
-
-//<li class="nav-item active"> <a class="nav-link" href=page-name+".html">Home <span class="sr-only">(current)</span></a> </li>
