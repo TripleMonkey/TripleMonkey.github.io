@@ -15,7 +15,7 @@ class Header extends HTMLElement {
 </nav>
 <header> <img src="Images/TripleMonkeyNewColors.svg" alt="Triple Monkey Studio logo"/></header>
     `;
-    $(document).ready(setActiveNavItem());
+    
     }
 }
 customElements.define('header-component', Header);
@@ -23,3 +23,4 @@ customElements.define('header-component', Header);
 function setActiveNavItem() {
     $(`a[href="${location.pathname.slice(1)}"]`).closest('li.nav-item').addClass('active');
  };
+$(document).ready(setActiveNavItem());
